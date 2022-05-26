@@ -46,9 +46,9 @@ function setupCookie() {
 
 function sendNotificationIfNeed() {
 
-  if (!push_key) {
+  /**if (!push_key) {
     console.log('执行任务结束!'); return;
-  }
+  }**/
 
   if (!fs.existsSync(result_path)) {
     console.log('没有执行结果，任务中断!'); return;
