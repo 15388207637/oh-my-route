@@ -58,7 +58,7 @@ function sendNotificationIfNeed() {
   let desp = fs.readFileSync(result_path, "utf8")
 
   // 去除末尾的换行
-  let SCKEY = push_key.replace(/[\r\n]/g,"")
+  /**let SCKEY = push_key.replace(/[\r\n]/g,"")
 
   const options ={
     uri:  `https://sc.ftqq.com/${SCKEY}.send`,
@@ -80,7 +80,7 @@ function sendNotificationIfNeed() {
   }).catch((err)=>{
     console.log("通知发送失败，任务中断！")
     fs.writeFileSync(error_path, err, 'utf8')
-  })
+  })**/
 }
 
 function main() {
